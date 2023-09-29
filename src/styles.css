@@ -4,26 +4,20 @@ body {
   font-family: Montserrat;
 }
 
-div {
-  position: relative;
-  top: 100px;
-  left: 100px;
-  border: 1px solid transparent;
-
-  border-radius: 5px;
-}
-
 h1 {
   font-family: Fraunces;
   font-weight: 700;
+  font-size: 30px;
 }
 p {
   color: #000;
   opacity: 0.5;
+  font-size: 14px;
 }
 .smell {
   letter-spacing: 4px;
   font-size: 17px;
+  padding: 30px auto;
 }
 .current {
   font-family: Fraunces;
@@ -37,28 +31,36 @@ p {
   color: #000;
   opacity: 0.5;
 }
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.container {
-  display: grid;
+
+.review-card {
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
+  padding: 10px auto;
+  margin: 300px 450px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+}
+
+.product-image {
+  width: 250px;
+  height: 400px;
+  margin-right: 15px;
+}
+
+.product-info {
+  flex-grow: 1;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
 }
-.image {
-  width: 300px;
-}
+
 button {
   display: block;
   background: rgb(61, 130, 105);
-  margin: 20px auto;
+  margin: 20px 15px;
   padding: 12px 60px;
   border: 1px solid transparent;
   border-radius: 10px;
